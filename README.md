@@ -1,0 +1,2 @@
+# entradaScannerAndre
+ScannerAndre
