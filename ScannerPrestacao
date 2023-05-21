@@ -1,0 +1,37 @@
+package classes;
+
+import java.util.Scanner;
+
+public class CalculoPrestacaoScanner {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//declaração das variais
+		
+				double valor,taxa , prestacao;
+				int meses ;
+				
+				//objeto da classe scanner
+				
+				Scanner entrada = new Scanner(System.in);
+						
+				//Entradas
+				
+				System.out.println("Entre com o valor da prestação : ");
+				valor = entrada.nextDouble(); //espera a entrada de um numero inteiro pelo teclado 
+				System.out.println("Entre com a taxa : ");
+				taxa = entrada.nextDouble(); //espera a entrada de um numero inteiro pelo teclado 
+				System.out.println("Entre com os meses em atraso :  ");
+				meses = entrada.nextInt(); //espera a entrada de um numero inteiro pelo teclado 
+				
+				//processamento
+				
+				prestacao =  valor+(valor*(taxa/100)*meses);
+				
+				//saida
+				
+				System.out.println("O volume da prestação é de  : " + prestacao + " reais");
+				entrada.close();
+	}
+
+}
